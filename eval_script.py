@@ -127,8 +127,6 @@ generator = pipeline( # Creates a text generation pipeline
     temperature=0.6,
 )
 
-base_model.to(dtype=torch.bfloat16, device="cuda")
-
 """### GSM8K"""
 
 def get_response(chats: list): # Function to get the response from the model
